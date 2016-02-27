@@ -1,4 +1,4 @@
-# SportsApp - C# console application developed in Visual Studio 2015 Community Edition
+# C# console application developed in Visual Studio 2015 Community Edition using bridge pattern
 
 Requirement: Create an application that will list the sports and their facilities. The objective is that each sport should use a facility where the game can be played. There can be different sports like soccer, swimming and basketball. There are different facilitis like outdoor field, indoor pool and indoor stadium.
 
