@@ -1,4 +1,5 @@
-﻿using SportsApp.Classes.Facilities;
+﻿using SportsApp.Classes.FacilityDecorator;
+using SportsApp.Classes.Facilities;
 using System;
 
 namespace SportsApp.Classes.Sports
@@ -7,6 +8,11 @@ namespace SportsApp.Classes.Sports
     {
         // derived class will write custom rules
         public abstract string Rule { get; }
+
+        // facility manager will be set in sport class. 
+        // a facility might have to be prepared in a different way
+        // example: a field facility will have to be prepared differently for soccer, athletics, track and field events
+        protected abstract FacilityManager SportFacilityManager { get; set; }
 
         // name of the sport
         public string Name { get; set; }
@@ -37,6 +43,11 @@ namespace SportsApp.Classes.Sports
 
             // play the sport in facility
             this.SportsFacility.PlaySport(this.Name);
+        }
+
+        public void PrepareFacility()
+        {
+            SportFacilityManager.PrepareFacility();
         }
     }
 }

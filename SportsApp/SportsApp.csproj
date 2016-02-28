@@ -7,7 +7,7 @@
     <ProjectGuid>{B1D4B39F-EAE1-4B08-98DC-2B0559F84352}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BridgePattern</RootNamespace>
+    <RootNamespace>SportsApp</RootNamespace>
     <AssemblyName>SportsApp</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -46,6 +46,9 @@
     <Compile Include="Classes\Facilities\Facility.cs" />
     <Compile Include="Classes\Facilities\IndoorPool.cs" />
     <Compile Include="Classes\Facilities\Field.cs" />
+    <Compile Include="Classes\FacilityDecorator\FacilityManager.cs" />
+    <Compile Include="Classes\FacilityDecorator\FieldFacilityManager.cs" />
+    <Compile Include="Classes\FacilityDecorator\SwimmingPoolFacilityManager.cs" />
     <Compile Include="Classes\Sports\Swimming.cs" />
     <Compile Include="Classes\Sports\Soccer.cs" />
     <Compile Include="Classes\Sports\Sport.cs" />

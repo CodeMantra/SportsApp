@@ -1,4 +1,6 @@
-﻿namespace SportsApp.Classes.Static
+﻿using System;
+
+namespace SportsApp.Classes.Static
 {
     public static class Common
     {
@@ -11,6 +13,11 @@
             OutDoorField,
             IndoorPool,
             OutDoorPool
+        }
+
+        public static void SetColor(ConsoleColor color)
+        {
+            Console.ForegroundColor = color;
         }
     }
 }

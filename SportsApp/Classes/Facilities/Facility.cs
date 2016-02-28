@@ -12,6 +12,5 @@ namespace SportsApp.Classes.Facilities
         /// </summary>
         /// <param name="sportName"></param>
         public abstract void PlaySport(string sportName);
-
     }
 }

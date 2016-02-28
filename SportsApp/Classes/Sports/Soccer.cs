@@ -1,4 +1,6 @@
-﻿using SportsApp.Classes.Facilities;
+﻿using System;
+using SportsApp.Classes.Facilities;
+using SportsApp.Classes.FacilityDecorator;
 
 namespace SportsApp.Classes.Sports
 {
@@ -12,10 +14,16 @@ namespace SportsApp.Classes.Sports
             }
         }
 
-        public Soccer(string name, Facility facility, string[] equipments)
+        protected override FacilityManager SportFacilityManager
+        {
+            get; set;
+        }
+
+        public Soccer(string name, Facility facility, FacilityManager facilityManager, string[] equipments)
                 : base (name, facility, equipments)
         {
-            //empty constructor
+            // set the facility manager
+            SportFacilityManager = facilityManager;
         }
     }
 }
