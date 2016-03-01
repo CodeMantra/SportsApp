@@ -3,13 +3,13 @@ using SportsApp.Classes.FacilityDecorator;
 
 namespace SportsApp.Classes.Sports
 {
-    public class Soccer : Sport
+    public class TrackAndField : Sport
     {
         public override string Rule
         {
             get
             {
-                return "Kick the ball and score a goal !!!";
+                return "Participate in multiple events - 200 m race, long jump, high jump, discus throw. !!!";
             }
         }
 
@@ -18,7 +18,7 @@ namespace SportsApp.Classes.Sports
             get; set;
         }
 
-        public Soccer(string name, Facility facility, FacilityManager facilityManager, string[] equipments)
+        public TrackAndField(string name, Facility facility, FacilityManager facilityManager, string[] equipments)
                 : base (name, facility, equipments)
         {
             // set the facility manager

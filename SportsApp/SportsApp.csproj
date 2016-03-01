@@ -49,9 +49,11 @@
     <Compile Include="Classes\FacilityDecorator\FacilityManager.cs" />
     <Compile Include="Classes\FacilityDecorator\FieldFacilityManager.cs" />
     <Compile Include="Classes\FacilityDecorator\SwimmingPoolFacilityManager.cs" />
+    <Compile Include="Classes\FacilityDecorator\TrackAndFieldFacilityManager.cs" />
     <Compile Include="Classes\Sports\Swimming.cs" />
     <Compile Include="Classes\Sports\Soccer.cs" />
     <Compile Include="Classes\Sports\Sport.cs" />
+    <Compile Include="Classes\Sports\TrackAndField.cs" />
     <Compile Include="Classes\Static\Common.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,7 +1,4 @@
-﻿using SportsApp.Classes.Sports;
-using System;
-
-namespace SportsApp.Classes.FacilityDecorator
+﻿namespace SportsApp.Classes.FacilityDecorator
 {
     public abstract class FacilityManager
     {

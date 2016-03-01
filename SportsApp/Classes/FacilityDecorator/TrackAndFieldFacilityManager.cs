@@ -1,15 +1,16 @@
 ﻿using SportsApp.Classes.Static;
 using System;
+using static SportsApp.Classes.Static.Common;
 
 namespace SportsApp.Classes.FacilityDecorator
 {
-    public class FieldFacilityManager : FacilityManager
+    public class TrackAndFieldFacilityManager : FacilityManager
     {
         /// <summary>
         /// constructor
         /// </summary>
         /// <param name="facilityManager"></param>
-        public FieldFacilityManager(FacilityManager facilityManager)
+        public TrackAndFieldFacilityManager(FacilityManager facilityManager)
         {
             // multiple facility managers can prepare the facility
             // so we chain the facility managers so that they can do work pne after the other
@@ -26,8 +27,8 @@ namespace SportsApp.Classes.FacilityDecorator
             Common.SetColor(ConsoleColor.Yellow);
 
             // prepare the faciltiy
-            Console.WriteLine("Field facility manager preparing facility. (_ (_)  _) ");
-            
+            Console.WriteLine("Facility manager preparing running tracks. =========");
+
             Common.SetColor(ConsoleColor.White);
         }
     }

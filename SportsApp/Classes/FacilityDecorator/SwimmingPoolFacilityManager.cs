@@ -22,12 +22,12 @@ namespace SportsApp.Classes.FacilityDecorator
         /// </summary>
         public override void PrepareFacility()
         {
+            base.PrepareFacility();
+
             Common.SetColor(ConsoleColor.Yellow);
 
             // prepare the faciltiy
             Console.WriteLine("Swimming pool facility manager preparing the pool and adding lanes. |--:) ");
-
-            base.PrepareFacility();
 
             Common.SetColor(ConsoleColor.White);
         }
